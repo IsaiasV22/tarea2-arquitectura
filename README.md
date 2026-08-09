@@ -8,7 +8,7 @@
 
 Blog de noticias nacionales construido con Nuxt 4 y `@nuxt/content`, con 9 entradas distribuidas en tres categorías (sucesos, deportes, espectáculos), listado por categoría, navegación anterior/siguiente restringida a la categoría, y búsqueda de texto completo sobre todo el blog.
 
-Las noticias están basadas en publicaciones reales de Teletica.com (ver `docs/referencias.md`), redactadas de forma original para este proyecto y citando la fuente al final de cada artículo.
+Las noticias están basadas en publicaciones reales de La Nación (nacion.com) (ver `docs/referencias.md`), redactadas de forma original para este proyecto y citando la fuente al final de cada artículo. Las fotografías de los autores provienen de sus páginas oficiales en La Nación, con crédito visible en cada artículo.
 
 ## Requisitos
 
