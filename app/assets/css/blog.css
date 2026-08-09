@@ -114,11 +114,27 @@ article :deep(p) {
   border-radius: 8px;
 }
 
+.author-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+  width: 64px;
+}
+
 .author img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  flex-shrink: 0;
+}
+
+.author-credit {
+  margin: 0;
+  font-size: 0.65rem;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-muted);
 }
 
 .author h4 {
