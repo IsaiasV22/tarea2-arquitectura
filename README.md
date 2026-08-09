@@ -1,8 +1,8 @@
 # Tarea 2 — Blog de noticias con Nuxt Content
 
-**Estudiante:** Isaías Víquez
+**Estudiante:** Isaías Víquez Soto
 
-**URL de publicación en Netlify:** _pendiente — completar después de desplegar (ver instrucciones abajo)_
+**URL de publicación en Netlify:** [tarea2-arqui-isaiasviquez.netlify.app](https://tarea2-arqui-isaiasviquez.netlify.app)
 
 ## Descripción
 
@@ -30,32 +30,10 @@ El sitio queda disponible en `http://localhost:3000` (la raíz `/` redirige a `/
 npm run build
 ```
 
-## Cómo terminar de subir el proyecto a GitHub
+## Repositorio y despliegue
 
-Este repositorio ya tiene configurado el remoto `origin` (`https://github.com/IsaiasV22/tarea2-arquitectura.git`), pero todavía no tiene commits. Para subir el proyecto:
-
-```bash
-git add .
-git commit -m "Tarea 2: blog de noticias con Nuxt Content"
-git push -u origin main
-```
-
-## Cómo publicar en Netlify
-
-1. Entrar a [Netlify](https://app.netlify.com/) e iniciar sesión.
-2. **Add new site → Import an existing project**.
-3. Conectar la cuenta de GitHub y seleccionar el repositorio `tarea2-arquitectura`.
-4. Configurar el build:
-   - **Branch to deploy:** `main`
-   - **Build command:** `npm run build`
-   - **Publish directory:** dejar que Netlify autodetecte el preset de Nuxt/Nitro (recomendado), o usar `dist` si se prefiere forzar un sitio estático agregando `nitro: { preset: 'netlify-static' }` en `nuxt.config.ts`.
-5. Deploy site. Netlify asignará una URL del tipo `https://<nombre-del-sitio>.netlify.app`.
-6. Copiar esa URL y pegarla en la parte superior de este README, en el campo **URL de publicación en Netlify**. Luego:
-   ```bash
-   git add README.md
-   git commit -m "Agregar URL de Netlify"
-   git push
-   ```
+- **GitHub:** `origin` apunta a `https://github.com/IsaiasV22/tarea2-arquitectura.git`.
+- **Netlify:** el sitio está conectado a la rama `main` (branch to deploy) con **build command** `npm run build`, publicando vía el preset autodetectado de Nuxt/Nitro. Cada push a `main` dispara un nuevo deploy automáticamente.
 
 ## Estructura del proyecto
 
