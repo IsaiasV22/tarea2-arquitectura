@@ -9,7 +9,10 @@ defineProps({
 
 <template>
   <div class="author">
-    <img :src="author.image" :alt="author.name" />
+    <div class="author-photo">
+      <img :src="author.image" :alt="author.name" />
+      <p class="author-credit">Fotografía: cortesía de La Nación</p>
+    </div>
     <div>
       <h4>Autor</h4>
       <p class="author-name">{{ author.name }}</p>
