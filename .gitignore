@@ -23,3 +23,6 @@ yarn-error.log*
 
 # Docs
 docs/
+
+# Claude
+CLAUDE.md
