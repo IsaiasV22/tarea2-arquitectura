@@ -27,7 +27,7 @@ const results = computed(() => {
     />
     <ul v-if="results.length" class="search-results">
       <li v-for="result in results" :key="result.id">
-        <NuxtLink :to="result.path">{{ result.title }}</NuxtLink>
+        <NuxtLink :to="result.id.split('#')[0]">{{ result.title }}</NuxtLink>
       </li>
     </ul>
     <p v-else-if="searchQuery" class="search-empty">Sin resultados para "{{ searchQuery }}"</p>
